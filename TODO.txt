@@ -1,0 +1,5 @@
+TODO
+====
+
+[] Ability to view a dataset in a JTable
+[] Make the dataset browseable (e.g. see every triple with the same subject)
