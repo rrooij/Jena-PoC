@@ -14,12 +14,14 @@ public class Sparql {
 	public static ResultSet Query(String queryString, Model model)
 	{
 		QueryExecution qe = QueryExecutionFactory.create(queryString, model);
+		qe.close();
 		return qe.execSelect();
 	}
 	
 	public static ResultSet Query(String queryString, Dataset dataset)
 	{
 		QueryExecution qe = QueryExecutionFactory.create(queryString, dataset);
+		qe.close();
 		return qe.execSelect();
 	}
 	
